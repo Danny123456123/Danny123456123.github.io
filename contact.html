@@ -3,52 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Info</title>
-    <style>
-        .contact-info {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            max-width: 400px;
-        }
-        .contact-info h2 {
-            text-align: center;
-        }
-        .contact-item {
-            margin-bottom: 10px;
-        }
-        .contact-item a {
-            text-decoration: none;
-            color: #000;
-        }
-        .contact-item a:hover {
-            text-decoration: underline;
-        }
-      
-        .linkedin-style {
-            color: #0077b5; 
-            font-weight: bold;
-        }
-    </style>
+    <title>Contact - Danny Huynh</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <h1 class="nav-name">Danny Huynh</h1>
+            <ul class="nav-menu">
+                <li><a href="home.html">Home</a></li>
+                <li>Portfolio
+                    <ul class="dropdown">
+                        <li><a href="page1.html">Project 1</a></li>
+                        <li><a href="page2.html">Project 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="contact-info">
-    <h2>Contact Information</h2>
+    <main>
+        <section class="contact-form">
+            <h2>Contact Me</h2>
 
-    <div class="contact-item">
-        <strong>Phone:</strong> 647-111-1111
-    </div>
+            <!-- Contact Information Section -->
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Phone:</strong> 647-111-1111</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dannyhuynh" target="_blank">Danny's LinkedIn</a></p>
+                <p><strong>Facebook:</strong> <a href="https://www.facebook.com/dannyhuynh" target="_blank">My Facebook</a></p>
+            </div>
 
-    <div class="contact-item">
-        <strong>LinkedIn:</strong> <span class="linkedin-style">Danny's LinkedIn</span>
-    </div>
+            <!-- Interest Section -->
+            <div class="interest-section">
+                <h3>What are you interested in?</h3>
+                <form action="#" method="POST">
+                    <label for="interest">Please select your area of interest:</label>
+                    <select id="interest" name="interest">
+                        <option value="web-development">Web Development</option>
+                        <option value="game-design">Game Design</option>
+                        <option value="consulting">Consulting</option>
+                        <option value="other">Other</option>
+                    </select>
 
-    <div class="contact-item">
-        <strong>Facebook:</strong> <a href="https://www.facebook.com" target="_blank">My Facebook</a>
-    </div>
-</div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
 
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
 </body>
 </html>
+
