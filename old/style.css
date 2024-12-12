@@ -179,8 +179,8 @@ button:hover {
 
 /* Dark Mode */
 body.dark-mode {
-    background-color: #1e1e1e;
-    color: #f4f4f9;
+    background-color: #bae6fa;
+    color: #b40808;
 }
 
 body.dark-mode .nav-menu a {
@@ -193,7 +193,7 @@ body.dark-mode .dropdown {
 }
 
 body.dark-mode .dropdown li a {
-    color: #ccc;
+    color: #000000;
 }
 
 body.dark-mode .dropdown li a:hover {
